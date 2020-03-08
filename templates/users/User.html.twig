@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+{% for person in User %}
+{% block title %}{{person.Firstname}}{% endblock %}
+
+{% block body %}
+<div class="container">
+        <div class="card">
+            <div class="card-body">
+
+                <h5>{{person.Firstname}} {{person.Lastname}}
+
+
+            </div>
+        </div>
+        
+</div>
+
+
+
+{% endblock %}
+{% endfor %}
